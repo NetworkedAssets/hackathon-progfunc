@@ -1,6 +1,6 @@
-package networkedassets.hackathon.progfunc.gettingstarted
+package networkedassets.hackathon.progfunc
 
-object MyModule {
+object Main {
 
   def main(args: Array[String]): Unit =
     println(formatAbs(-42))
@@ -14,4 +14,6 @@ object MyModule {
     if (n < 0) -n
     else n
 
+  // Exercise 1: Write a function to compute the nth fibonacci number
+  def fib(n: Int): Int = ???
 }
