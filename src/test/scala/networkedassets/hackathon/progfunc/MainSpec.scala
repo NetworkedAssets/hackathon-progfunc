@@ -10,8 +10,8 @@ class MainSpec extends FlatSpec {
     assert(abs(11) == 11)
   }
 
-  ignore should "calculate values for fibonacci seq" in {
-    assert(List(0, 1, 2, 3, 4, 5, 6).map(fib) == List(0, 1, 1, 2, 3, 5, 8))
+  "A Fib" should "calculate values for fibonacci seq" in {
+    assert(Array(0, 1, 2, 3, 4, 5, 6).map(fib) sameElements Array(0, 1, 1, 2, 3, 5, 8))
   }
 
 }
