@@ -63,4 +63,13 @@ class ListSpec extends FunSuite {
     assert(length(List(1, 2, 3)) == 3, "length of n-element list is n")
   }
 
+  test("hasSubsequence") {
+    assert(hasSubsequence(Nil, Nil) == false, "1")
+    assert(hasSubsequence(List(1), Nil) == false, "2")
+    assert(hasSubsequence(List(1, 2, 3), List(2)) == true, "3")
+    assert(hasSubsequence(List(1, 2, 3, 4), List(2, 3)) == true, "4")
+    assert(hasSubsequence(List(1, 2, 3, 4), List(4)) == true, "5")
+    assert(hasSubsequence(List(1, 2, 3, 4), List(1)) == true, "6")
+    assert(hasSubsequence(List(1, 2, 3, 4), List(1, 2, 3, 4)) == true, "7")
+  }
 }
